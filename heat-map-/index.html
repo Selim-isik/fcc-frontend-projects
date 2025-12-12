@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D3 Heat Map</title>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        background-color: #f0f0f0;
+      }
+      #title {
+        margin-top: 30px;
+      }
+      #description {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+      }
+
+      .cell:hover {
+        stroke: black;
+      }
+
+      #tooltip {
+        position: absolute;
+        text-align: center;
+        width: 150px;
+        padding: 5px;
+        font: 12px sans-serif;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        border-radius: 5px;
+        pointer-events: none;
+        opacity: 0;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Monthly Global Surface Temperature</h1>
+    <h3 id="description">Base Temperature: 8.66°C</h3>
+    <div id="data-visualization"></div>
+    <div id="tooltip"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
